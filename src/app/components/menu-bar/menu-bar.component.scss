@@ -1,0 +1,65 @@
+.mainMenu {
+  border-bottom: 1px solid #dfdfdf;
+  background-color: white;
+  width: 100%;
+  padding: 20px 0px;
+
+  .menuContent {
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    a {
+      text-decoration: none;
+      color: #222;
+    }
+
+    .logo {
+      font-weight: 900;
+      font-size: 30px;
+      color: #222;
+    }
+
+    ul {
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: #222;
+      }
+
+      li {
+        display: inline;
+        color: #868686;
+        margin-left: 60px;
+        font-weight: 500;
+        font-size: 15px;
+
+        &:hover {
+          color: #222;
+          transition: 1s;
+        }
+      }
+
+      .active {
+        font-weight: 700;
+      }
+    }
+
+    @media screen and (max-width:700px) {
+      justify-content: center;
+
+      ul {
+        padding: 0;
+        text-align: center;
+
+        li {
+          margin: 0px 7px;
+        }
+      }
+    }
+  }
+}
